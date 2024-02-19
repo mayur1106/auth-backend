@@ -10,7 +10,7 @@ Authentication System Using JWT access tokena and refresh token
 Clone the project
 
 ```bash
-  git clone https://link-to-project
+  git clone https://github.com/mayur1106/auth-backend.git
 ```
 
 Go to the project directory
@@ -30,6 +30,7 @@ Start the server
 ```bash
   npm run start
 ```
+Additionally you can use docker-compose up to run project in docker
 
 
 ## API Reference
