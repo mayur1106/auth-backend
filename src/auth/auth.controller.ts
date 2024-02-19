@@ -26,7 +26,7 @@ import { AuthDto } from './dto/auth.dto';
 export class AuthController {
   constructor(private authService: AuthService) {}
 
-  @ApiOperation({ summary: 'Signup user' })
+  @ApiOperation({ summary: 'Signup user API' })
   @ApiResponse({ status: 200, type: User })
   @ApiResponse({ status: 400, description: 'Bad Request' })
   @Post('register')
@@ -38,7 +38,7 @@ export class AuthController {
     return this.authService.signUp(createUserDto, res);
   }
 
-  @ApiOperation({ summary: 'Login user' })
+  @ApiOperation({ summary: 'Login user API' })
   @ApiResponse({ status: 200, type: User })
   @ApiResponse({ status: 400, description: 'Bad Request' })
   @Post('login')
